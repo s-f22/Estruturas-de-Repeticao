@@ -1,0 +1,28 @@
+﻿
+    Programa
+    {
+        Função Principal()
+        {
+            booleano controle;
+
+            faça
+            {
+
+            escreva("Insira uma nota de 0 a 10: ");
+            real nota = leia(nota;
+
+            se (nota >= 0 E nota <= 10)
+            {
+                escreva("Nota " + nota + " inserida com sucesso.");
+                controle = verdadeiro;
+            }
+            senão
+            {
+                escreva("Nota Invalida. Tente novamente.");
+                controle = falso;
+            }
+
+            } enquanto (controle == falso);
+        }
+    }
+}

@@ -1,0 +1,30 @@
+﻿Programa
+    {
+        Função principal()
+        {
+            booleano controle;
+
+            escreva("Insira seu nome de usuário: ");
+            palavra nome =  leia(nome);
+
+            faça
+            {
+
+            escreva("Insira sua senha: ");
+            palavra senha =  leia(senha);
+            
+            se (nome DIFERENTE senha)
+            {
+                escreva("Cadastro efetuado com sucesso!");
+                controle = verdadeiro;
+            }
+            senao
+            {
+                leia("Senha inválida. Valores repetidos.");
+                controle = falso;
+            }
+
+            } enquanto (controle IGUAL false);
+        }
+    }
+}

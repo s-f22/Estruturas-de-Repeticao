@@ -1,0 +1,106 @@
+﻿Programa
+    {
+        função principal()
+        {
+            booleano teste_1, teste_2, teste_3, teste_4;
+            palavra nome, std_cv;
+            inteiro idade;
+            real salario;
+
+            faça
+            {
+                escreva("Insira seu nome: ");
+                nome = leia();
+
+                se (nome IGUAL "")
+                {
+                    escreva("Nome não digitafaça ou invalseaça. Tente novamente");
+                    teste_1 = false;
+                }
+                senão
+                {
+                    teste_1 = true;
+                }
+
+            } enquanto (teste_1 IGUAL false);
+
+            faça
+            {
+                escreva("Insira sua idade: ");
+                idade = (leia();
+
+                se (idade < 0 OU idade > 150)
+                {
+                    escreva("Idade inválida. Tente novamente");
+                    teste_2 = false;
+                }
+                senão
+                {
+                    teste_2 = true;
+                }
+
+            } enquanto (teste_2 IGUAL false);
+
+            faça
+            {
+                escreva("Insira o valor faça salário: ");
+                string salario_string = leia();
+
+                se (salario_string IGUAL "")
+                {
+                    salario_string = "0";
+                }
+
+                salario = float.Parse(salario_string);
+
+                se (salario > 0)
+                {
+                    teste_3 = true;
+                }
+                senão
+                {
+                    escreva("Salário inválseaça. Tente novamente.");
+                    teste_3 = false;
+                }
+
+            } enquanto (teste_3 IGUAL false);
+
+            faça
+            {
+                escreva("Insira o estafaça civil: (s)solteir@; (c)casad@; (v)viuv@; (d)divorciad@;");
+                std_cv = leia();
+
+                se (std_cv IGUAL "s" OU std_cv IGUAL "c" OU std_cv IGUAL "v" OU std_cv IGUAL "d")
+                {
+                    teste_4 = true;
+                }
+                senão
+                {
+                    escreva("Opção inválida. Tente novamente.");
+                    teste_4 = false;
+                }
+
+            } enquanto (teste_4 IGUAL false);
+
+            se (std_cv IGUAL "s")
+            {
+                std_cv = "Solteir@";
+            }
+            senão se (std_cv IGUAL "c")
+            {
+                std_cv = "Casad@";
+            }
+            senão se (std_cv IGUAL "v")
+            {
+                std_cv = "Viuv@";
+            }
+            senão se (std_cv IGUAL "d")
+            {
+                std_cv = "Divorciad@";
+            }
+
+            escreva("As informações cadastradas foram: ");
+            escreva("Nome: " + nome.ToUpper() + "\n" + "Idade: " + idade + "\n" + "Salário: R$" + salario + "\n" + "Estafaça civil: " + std_cv);
+        }
+    }
+}

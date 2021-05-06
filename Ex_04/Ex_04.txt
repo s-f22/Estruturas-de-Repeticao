@@ -1,0 +1,19 @@
+﻿Programa
+    {
+        função principal()
+        {
+            escreva("\nSEQUENCIA DE FIBONACCI até 500\n");
+            inteiro anterior = 0;
+            inteiro atual = 1;
+
+            enquanto (anterior <= 500)
+            {
+                atual = atual + anterior;
+                escreva(anterior + ", ");
+                anterior = atual - anterior;
+            }
+            escreva("\n\n\n");
+
+        }
+    }
+}
